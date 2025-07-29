@@ -5,6 +5,12 @@ terraform {
       version = "4.37.0"
     }
   }
+backend "azurerm" {
+    resource_group_name  = "rgamak"
+    storage_account_name = "amakstg"
+    container_name       = "amakcontainer"
+    key                  = "terraform.tfstate"
+  }
 }
 
 provider "azurerm" {
