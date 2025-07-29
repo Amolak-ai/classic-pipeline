@@ -3,7 +3,7 @@ module "resource_group" {
   rg_name     = "kittu-rg"
   rg_location = "centralus"
 }
-module "resource_group" {
+module "resource_group01" {
   source      = "../child module/resource_group"
   rg_name     = "pittu-rg"
   rg_location = "centralus"
