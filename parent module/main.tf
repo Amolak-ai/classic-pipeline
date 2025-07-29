@@ -3,6 +3,11 @@ module "resource_group" {
   rg_name     = "kittu-rg"
   rg_location = "centralus"
 }
+module "resource_group" {
+  source      = "../child module/resource_group"
+  rg_name     = "pittu-rg"
+  rg_location = "centralus"
+}
 module "vnet" {
   depends_on    = [module.resource_group]
   source        = "../child module/vnet"
