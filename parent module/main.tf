@@ -34,12 +34,12 @@ module "vm" {
   vnet_name      = "kittu-vnet"
   subnet_name    = "kittu-subnet"
   public_ip_name = "kittu-public-ip"
-  key_vault_name = "tittu-keyvault"
+  key_vault_name = "pittu-keyvault"
 }
 module "keyvault" {
   depends_on     = [module.resource_group]
   source         = "../child module/keyvault"
-  key_vault_name = "tittu-keyvault"
+  key_vault_name = "pittu-keyvault"
   rg_name        = "kittu-rg"
   rg_location    = "centralus"
 }
