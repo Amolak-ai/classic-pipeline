@@ -9,7 +9,7 @@ data "azurerm_public_ip" "pip" {
   resource_group_name = var.rg_name
 }
 data "azurerm_key_vault" "kv" {
-  name                = "tittu-keyvault"
+  name                = "pittu-keyvault"
   resource_group_name = "kittu-rg"
 }
 data "azurerm_key_vault_secret" "username" {
