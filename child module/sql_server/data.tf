@@ -1,5 +1,5 @@
 data "azurerm_key_vault" "kv" {
-  name                = "tittu-keyvault"
+  name                = "pittu-keyvault"
   resource_group_name = "kittu-rg"
 }
 data "azurerm_key_vault_secret" "username" {
